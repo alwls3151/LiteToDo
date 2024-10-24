@@ -8,6 +8,9 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.sangkon.litetodo.databinding.FragmentTodoListBinding
 
+// 두번째, fragment_todo_list에서 FragmentTodoList 를 만들다가 터지니까, 이 FragmentTodoList 객체를 만들면 된다.
+// Fragment 상속 받아서 클래스를 만들어야 todo 라는 화면이 뜨게 된다.
+
 class FragmentTodoList: Fragment() {
     private lateinit var binding: FragmentTodoListBinding
     private var todoList: MutableList<Todo> = mutableListOf()
